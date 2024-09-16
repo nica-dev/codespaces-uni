@@ -73,7 +73,7 @@ int main(void)
             printf("Ingrese el ID del estudiante: ");
             scanf("%d", &id);
             printf("Ingrese el nombre del estudiante: ");
-            scanf(" %[^\n]", nombre);
+            scanf("%s", nombre);
             printf("Ingrese la nota del estudiante: ");
             scanf("%f", &nota);
             agregar_estudiante(id, nombre, nota);
