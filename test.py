@@ -10,12 +10,12 @@ class Number:
         self.num = num
     def update(self, is_winner):
         if is_winner:
-            total_revenue += self.actual_cost * 60
-            total_cost += self.actual_cost
+            self.total_revenue += self.actual_cost * 60
+            self.total_cost += self.actual_cost
             self.actual_cost = 5
             self.lotteries = 1
         else:
-            total_cost += self.actual_cost
+            self.total_cost += self.actual_cost
             if self.lotteries >= 25:
                 self.actual_cost *= 2
                 self.lotteries = 1
