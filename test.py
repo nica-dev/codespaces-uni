@@ -1,3 +1,4 @@
+from random import randint
 class Number:
     number = 0
     lotteries = 1
@@ -19,4 +20,8 @@ class Number:
                 self.lotteries = 1
 
 numbers = [Number(x) for x in range(100)]
-print(numbers)
+class Lotto:
+    numbers = [Number(x) for x in range(100)]
+    winners = []
+    def draw():
+        winner = randint(100)
