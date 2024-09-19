@@ -19,7 +19,6 @@ class Number:
                 self.actual_cost *= 2
                 self.lotteries = 1
 
-numbers = [Number(x) for x in range(100)]
 class Lotto:
     numbers = [Number(x) for x in range(100)]
     winners = []
@@ -27,3 +26,5 @@ class Lotto:
         winner = randint(100)
         for number in self.numbers:
             number.update(number.value == winner)
+    def get_total_revenue(self):
+        
