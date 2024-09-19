@@ -6,14 +6,14 @@ class Number:
     total_revenue = 0
     def __init__(self, num):
         self.num = num
-    def update_cost(self, winner):
+    def update(self, winner):
         if winner:
             total_revenue += self.actual_cost * 60
             total_cost += self.actual_cost
             self.actual_cost = 5
             self.lotteries = 1
         else:
-            total_cost += self.actual_cost
             if self.lotteries > 25:
                 self.actual_cost *= 2
                 self.lotteries = 1
+            total_cost += self.actual_cost
