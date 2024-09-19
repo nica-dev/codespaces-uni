@@ -24,7 +24,6 @@ class Number:
 
 class Lotto:
     numbers = [Number(x) for x in range(100)]
-    winners = []
     def draw(self):
         winner = randint(0,99)
         for number in self.numbers:
