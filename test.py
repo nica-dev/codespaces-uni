@@ -1,6 +1,6 @@
 from random import randint
 class Number:
-    number = 0
+    value = 0
     lotteries = 1
     actual_cost = 5
     total_cost = 0
@@ -26,4 +26,5 @@ class Lotto:
     def draw(self):
         winner = randint(100)
         for number in self.numbers:
-            
+            if number.number == winner:
+                
