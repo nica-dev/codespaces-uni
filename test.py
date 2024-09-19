@@ -19,6 +19,8 @@ class Number:
             if self.lotteries >= 25:
                 self.actual_cost *= 2
                 self.lotteries = 1
+            else:
+                self.lotteries += 1
 
 class Lotto:
     numbers = [Number(x) for x in range(100)]
