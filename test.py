@@ -7,8 +7,8 @@ class Number:
     total_revenue = 0
     def __init__(self, num):
         self.num = num
-    def update(self, winner):
-        if winner:
+    def update(self, is_winner):
+        if is_winner:
             total_revenue += self.actual_cost * 60
             total_cost += self.actual_cost
             self.actual_cost = 5
@@ -26,5 +26,4 @@ class Lotto:
     def draw(self):
         winner = randint(100)
         for number in self.numbers:
-            if number.number == winner:
-                
+            number.update(number.value == winner)
