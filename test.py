@@ -18,6 +18,4 @@ class Number:
                 self.actual_cost *= 2
                 self.lotteries = 1
 
-numbers = []
-for i in range(100):
-    numbers.append(Number(i))
+numbers = [Number(x) for x in range(100)]
