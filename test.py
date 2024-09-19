@@ -13,7 +13,7 @@ class Number:
             self.actual_cost = 5
             self.lotteries = 1
         else:
-            if self.lotteries > 25:
+            total_cost += self.actual_cost
+            if self.lotteries >= 25:
                 self.actual_cost *= 2
                 self.lotteries = 1
-            total_cost += self.actual_cost
