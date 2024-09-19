@@ -19,3 +19,4 @@ class Number:
                 self.lotteries = 1
 
 numbers = [Number(x) for x in range(100)]
+print(numbers)
