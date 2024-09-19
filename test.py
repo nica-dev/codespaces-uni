@@ -36,3 +36,9 @@ class Lotto:
             total_revenue += number.total_revenue
         return total_revenue - total_cost
 
+def main():
+    lotto = Lotto()
+    for i in range(100):
+        winner = lotto.draw()
+        result = lotto.get_result()
+        print(f"Sorteo: {i}, Ganador: {winner}, Resultado: {result}")
