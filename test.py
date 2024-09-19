@@ -6,8 +6,8 @@ class Number:
     actual_cost = 5
     total_cost = 0
     total_revenue = 0
-    def __init__(self, num):
-        self.num = num
+    def __init__(self, value):
+        self.value = value
     def update(self, is_winner):
         if is_winner:
             self.total_revenue += self.actual_cost * 60
