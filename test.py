@@ -27,6 +27,7 @@ class Lotto:
         winner = randint(100)
         for number in self.numbers:
             number.update(number.value == winner)
+        return winner
     def get_result(self):
         total_cost = 0
         total_revenue = 0
@@ -34,3 +35,4 @@ class Lotto:
             total_cost += number.total_cost
             total_revenue += number.total_revenue
         return total_revenue - total_cost
+
