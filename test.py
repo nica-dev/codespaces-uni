@@ -42,3 +42,5 @@ def main():
         winner = lotto.draw()
         result = lotto.get_result()
         print(f"Sorteo: {i}, Ganador: {winner}, Resultado: {result}")
+
+main()
