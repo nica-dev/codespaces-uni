@@ -1,4 +1,5 @@
 from random import randint
+
 class Number:
     value = 0
     lotteries = 1
