@@ -17,3 +17,7 @@ class Number:
             if self.lotteries >= 25:
                 self.actual_cost *= 2
                 self.lotteries = 1
+
+numbers = []
+for i in range(100):
+    numbers.append(Number(i))
