@@ -40,7 +40,7 @@ class Lotto:
 
 def main():
     lotto = Lotto()
-    for i in range(600):
+    for i in range(600): # Numero de sorteos
         winner = lotto.draw()
         result = lotto.get_result()
         print(f"Sorteo: {i}, Ganador: {winner}, Resultado: {result}")
