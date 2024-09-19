@@ -10,6 +10,7 @@ class Number:
         self.value = value
     def update(self, is_winner):
         if is_winner:
+            print(f"Se ganó: {self.actual_cost * 60}")
             self.total_revenue += self.actual_cost * 60
             self.total_cost += self.actual_cost
             self.actual_cost = 5
