@@ -3,6 +3,7 @@ def calcular_imc(peso_kg, altura_m):
     
     # Calculamos el IMC
     IMC = peso_kg / (altura_m ** 2)
+    
     return IMC
 
 def obtener_clasificacion_imc(IMC):
@@ -15,6 +16,7 @@ def obtener_clasificacion_imc(IMC):
         categoria = "Normal"
     elif IMC < 30:
         categoria = "Sobrepeso"
+    
     return categoria
 
 def main():
@@ -29,6 +31,7 @@ def main():
         
         imc = calcular_imc(peso, altura)
         print(f"Su IMC es de {imc}")
+        
         clasificacion = obtener_clasificacion_imc(imc)
         print(f"Su clasificacion es {clasificacion}")
 
