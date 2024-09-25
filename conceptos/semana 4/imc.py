@@ -5,6 +5,18 @@ def calcular_imc(peso_kg, altura_m):
     IMC = peso_kg / (altura_m ** 2)
     return IMC
 
+def obtener_clasificacion_imc(IMC):
+    # Por descarte la categoría sería Obesidad
+    categoria = "Obesidad"
+
+    if IMC < 18.5:
+        categoria = "Bajo peso"
+    elif IMC < 25:
+        categoria = "Normal"
+    elif IMC < 30:
+        categoria = "Sobrepeso"
+    return categoria
+
 def main():
     """"Función principal"""
     
