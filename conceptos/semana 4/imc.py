@@ -17,6 +17,6 @@ def calcular_imc(peso_kg, altura_m):
 cant_personas = int(input("Ingrese la cantidad de personas"))
 for i in cant_personas:
     # Solicitamos al usuario peso y altura
-    peso_kg = float(input("Ingrese su peso en kg: "))
-    altura_m = float(input("Ingrese su altura en metros: "))
-    calcular_imc(peso_kg, altura_m)
+    peso = float(input("Ingrese su peso en kg: "))
+    altura = float(input("Ingrese su altura en metros: "))
+    calcular_imc(peso, altura)
