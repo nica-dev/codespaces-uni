@@ -22,7 +22,7 @@ def main():
     
     cant_personas = int(input("Ingrese la cantidad de personas"))
 
-    for i in cant_personas:
+    for _ in cant_personas:
         # Solicitamos al usuario peso y altura
         peso = float(input("Ingrese su peso en kg: "))
         altura = float(input("Ingrese su altura en metros: "))
